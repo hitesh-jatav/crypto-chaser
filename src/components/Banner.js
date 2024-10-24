@@ -14,15 +14,15 @@ const Banner = ({ currencies = [] }) => {
         <div className='banner-wrapper mb-5 px-5'>
             <div className=''>
                 <div className='d-flex align-items-center'>
-                <h1 className='text-gold px-3'>Cryto Chaser</h1>
-                <span>Chase your digital currency</span>
+                    <h1 className='text-gold px-3'>Cryto Chaser</h1>
+                    <span>Chase your digital currency</span>
                 </div>
 
                 <div className='d-flex banner-container m-5'>
                     {
                         currencies.map((currency) => <div className='banner-content justify-content-center border p-4 m-2'
                             key={currency.id}>
-                            <img src={currency.image} width={150} height={150} />
+                            <img src={currency.image} width={150} height={150} alt='banner-image' />
 
                             <p>{currency.name}</p>
                             <p className={currency.price_change_percentage_24h_in_currency < 0 ? 'text-danger' : 'text-success'}>

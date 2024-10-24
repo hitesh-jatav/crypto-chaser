@@ -33,7 +33,7 @@ const List = ({ currencies = [] }) => {
                             <td className='text-white '>
                                 <Link to={'/coins/' + currency.id}>
                                     <div className='d-flex align-items-center'>
-                                        <img src={currency.image} width={40} height={40} />
+                                        <img src={currency.image} width={40} height={40} alt={currency.name} />
                                         <div className='d-flex flex-column mx-3 '>
                                             <span className='d-block bold'>
                                                 {currency?.symbol.toUpperCase()}
